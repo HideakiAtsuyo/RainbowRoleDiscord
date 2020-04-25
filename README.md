@@ -1,5 +1,5 @@
 # RainbowRoleDiscord
-<br><br><br>
+<br>
 # Config
 <br>
 
