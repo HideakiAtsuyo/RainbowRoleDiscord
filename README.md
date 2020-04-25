@@ -11,5 +11,12 @@
 	"Owners": ["id", "id2"]
 }
 ```
+
 <br>
-For install the modules u just need to type:<b>`npm i`<br>After u can launch the bot with:<br>`node index.js`
+For install the modules u just need to type:<b>
+
+`npm i`
+
+<br>After u can launch the bot with:<br>
+
+`node index.js`
