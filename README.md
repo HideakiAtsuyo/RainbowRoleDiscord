@@ -2,7 +2,8 @@
 <br><br><br>
 # Config
 <br>
-```
+
+```js
 {
 	"token": "BOT TOKEN",
 	"prefix": "*",
