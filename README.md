@@ -20,3 +20,5 @@ For install the modules u just need to type:<b>
 <br>After u can launch the bot with:<br>
 
 `node index.js`
+
+If you have any problem create an issue!
