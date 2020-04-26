@@ -1,5 +1,5 @@
 # RainbowRoleDiscord
-<br><br>
+<br><strong>Code not tested!!</strong><br><br>
 # Config
 <br>
 
