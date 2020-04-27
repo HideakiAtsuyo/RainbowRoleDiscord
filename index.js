@@ -16,7 +16,7 @@ client.setMaxListeners(Number.POSITIVE_INFINITY);
 
 client.on('ready', () => {
     
-	client.user.setActivity("Playing with colors! :)");
+	client.user.setActivity("Playing with colors! :) (By Dany-LF#6669)");
     console.log(
         "----------------------------------------------------" + "\n" +
         colors.rainbow(figlet.textSync('Dany-LF')) + "\n" +
