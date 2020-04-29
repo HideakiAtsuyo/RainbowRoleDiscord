@@ -25,3 +25,8 @@ For install the modules u just need to type:<b>
 `node index.js`
 
 If you have any problem create an issue!
+<br>
+# Video
+<br>
+
+[Check the "tutorial"](https://www.youtube.com/watch?v=GJMjZCJ_VpI)
