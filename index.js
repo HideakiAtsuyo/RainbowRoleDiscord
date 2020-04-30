@@ -15,6 +15,7 @@ client.setMaxListeners(Number.POSITIVE_INFINITY);
 /////////////////////////////////////////////////
 
 client.on('ready', () => {
+	console.clear();
     
 	client.user.setActivity("Playing with colors! :) (By Dany-LF#6669)");
     console.log(
