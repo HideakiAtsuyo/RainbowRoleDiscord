@@ -1,4 +1,5 @@
 @echo off
+Title RainbowRoleDiscordBot By Dany-LF
 cls
 color 5F
 :question
@@ -15,6 +16,7 @@ if /I "%choix%"=="4" (goto :End)
 goto question
  
 :Install
+Title RainbowRoleDiscordBot By Dany-LF - Installation
 cls
 echo.
 npm i
@@ -22,6 +24,7 @@ echo Finished!
 goto question
  
 :Launch
+Title RainbowRoleDiscordBot By Dany-LF - Launched
 cls
 echo.
 echo Launched!
@@ -30,6 +33,7 @@ pause
 goto end
 
 :LaunchWithoutStop
+Title RainbowRoleDiscordBot By Dany-LF - Launched I
 cls
 echo.
 echo Launched!
