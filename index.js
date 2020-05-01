@@ -15,33 +15,22 @@ client.setMaxListeners(Number.POSITIVE_INFINITY);
 /////////////////////////////////////////////////
 
 client.on('ready', () => {
-	console.clear();
+  console.clear();
     
-	client.user.setActivity("Playing with colors! :) (By Dany-LF#6669)");
-    console.log(
-        "----------------------------------------------------" + "\n" +
-        colors.rainbow(figlet.textSync('Dany-LF')) + "\n" +
-        "----------------------------------------------------" + "\n" +
-        "--> " + (chalk.blue('Name Bot            : ')) + `[ ${client.user.username} ]` + "\n" +
-        "--> " + (chalk.blue('Memory used         : ')) + `[ ${memoire} MB ]` + "\n" +
-        "--> " + (chalk.blue('RAM used            : ')) + `[ ${ram_1} on ${ram_2} ]` + "\n" +
-        "----------------------------------------------------" + "\n" +
-        (chalk.green('                      Ready !')) + "\n" +
-        "----------------------------------------------------"
-    );
-
+  client.user.setActivity("Playing with colors! :) (By Dany-LF#6669)");
+    console.log(`----------------------------------------------------\n${colors.rainbow(figlet.textSync('Dany-LF'))}\n----------------------------------------------------\n--> ${chalk.blue('Name Bot            : ')}[ ${client.user.username} ]\n--> ${chalk.blue('Memory used         : ')}[ ${memoire} MB ]\n--> ${chalk.blue('RAM used            : ')}[ ${ram_1} on ${ram_2} ]\n----------------------------------------------------\n${(chalk.green('                      Ready !'))}\n----------------------------------------------------`);
 });
 
 client.on("guildCreate", async (guild) => {
 if(client.guilds.size >= 2){
-	console.info("Don't use a rainbow role bot in multiples guilds he can be ban AND the owner of the bot also!!");
-	return guild.leave();
+  console.info("Don't use a rainbow role bot in multiples guilds he can be ban AND the owner of the bot also!!");
+  return guild.leave();
 };
 })
 
 client.on('message', async (message) => {
-	
-	let args = message.content.split(' ').slice(1);
+  
+  let args = message.content.split(' ').slice(1);
 
   if (message.content.startsWith(`${prefix}rainbowrole`)) {//Start
 
@@ -52,7 +41,7 @@ client.on('message', async (message) => {
   if(!args[0]) return message.reply("Please specify a role!");
   let rrole = message.mentions.roles.first() || message.guild.roles.find(r=> r.name === args[0]) || message.guild.roles.find(r=> r.id === args[0]),
   n = rrole.name;
-	if (!message.guild.roles.find("name", n)) return message.reply('Please specify a __**VALID**__ role!')
+  if (!message.guild.roles.find("name", n)) return message.reply('Please specify a __**VALID**__ role!')
 
   message.reply('Activated!').then((message) => {message.delete(3000);})
   //if(message.deletable) message.delete();
