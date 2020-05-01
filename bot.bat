@@ -46,3 +46,4 @@ goto LaunchWithoutStop
 cls
 echo.
 msg * Bye %username%
+exit
