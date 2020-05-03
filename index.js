@@ -17,24 +17,7 @@ var TimeTooLowMsg = chalk.blue("<===============================================
 /////////////////////////////////////////////////
 client.on('ready', () => {
   console.clear();
-  client.setInterval(() => {
-    var act = [
-    {
-        "text": "Playing with colors! :)",
-        "type": "PLAYING"
-    },
-    {
-        "text": "By Dany-LF#6669",
-        "type": "WATCHING"
-    },
-    ]
-    try {
-        const activity = act[Math.floor(Math.random() * act.length)];
-        client.user.setActivity(activity.text, { type: activity.type });
-    } catch (err) {
-        return;
-    }
-}, 15000);
+  client.setInterval(() => {var act = [{"text": "Playing with colors! :)","type": "PLAYING"},{"text": "By Dany-LF#6669","type": "WATCHING"},]try {const activity = act[Math.floor(Math.random() * act.length)];client.user.setActivity(activity.text, { type: activity.type });} catch (err) {return;}}, 15000);
     console.log(`----------------------------------------------------\n${colors.rainbow(figlet.textSync('Dany-LF'))}\n----------------------------------------------------\n--> ${chalk.blue('Name Bot            : ')}[ ${client.user.username} ]\n--> ${chalk.blue('Memory used         : ')}[ ${memoire} MB ]\n--> ${chalk.blue('RAM used            : ')}[ ${ram_1} on ${ram_2} ]\n----------------------------------------------------\n${(chalk.green('                      Ready !'))}\n----------------------------------------------------`);
 });
 
