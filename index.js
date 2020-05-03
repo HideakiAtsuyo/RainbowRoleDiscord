@@ -48,7 +48,9 @@ function TimeTooLow(){
   if(conf.StopIfTimeIsLessYhan5Seconds == true){
     console.log(TimeTooLowMsg+chalk.red("TimeTooLow var is true. Stopping.."));
     return process.exit(-1);
-  } else {
+  } else if(conf.StopIfTimeIsLessYhan5Seconds == false){
     console.log(TimeTooLowMsg);
+  } else {
+  	return console.log("PUT true OR false for the config file for the StopIfTimeIsLessYhan5Seconds!")
   }
 };
