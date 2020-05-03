@@ -2,5 +2,6 @@
 	"token": "your token(Bot please lol)",
 	"prefix": "*",
 	"time": "5",
-	"Owners": ["id", "id2"]
+	"Owners": ["id", "id2"],
+	"StopIfTimeIsLessYhan5Seconds": true
 }
