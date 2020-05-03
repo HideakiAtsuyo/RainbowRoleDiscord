@@ -13,6 +13,8 @@ ram_2 = Math.ceil(os.totalmem() / 1000000);
 /////////////////////////////////////////////////
 client.setMaxListeners(Number.POSITIVE_INFINITY);
 /////////////////////////////////////////////////
+var TimeTooLowMsg = chalk.blue("<============================================================>\n") + chalk.red("Put a minimum of 5 seconds to avoid ratelimit and banishment!!\n")+chalk.blue("<============================================================>\n");
+/////////////////////////////////////////////////
 client.on('ready', () => {
   console.clear();
   client.user.setActivity("Playing with colors! :) (By Dany-LF#6669)");
@@ -32,7 +34,7 @@ client.on('message', async (message) => {
   n = rrole.name;
   if (!message.guild.roles.find("name", n)) return message.reply('Please specify a __**VALID**__ role!');
 
-    if(conf.time < 5) console.log(chalk.blue("<============================================================>\n") + chalk.red("Put a minimum of 5 seconds to avoid ratelimit and banishment!!\n")+chalk.blue("<============================================================>\n"));
+    if(conf.time < 5) TimeTooLow();
   message.reply('Activated!').then((message) => {message.delete(3000);});
   if(message.deletable) message.delete();
   var thebigmix = message.guild.roles.find("name", n);
@@ -41,3 +43,12 @@ client.on('message', async (message) => {
   }, conf.time*1000);//config.time in seconds
 }});
 client.login(conf.token);
+
+function TimeTooLow(){
+  if(conf.StopIfTimeIsLessYhan5Seconds == true){
+    console.log(TimeTooLowMsg+chalk.red("TimeTooLow var is true. Stopping.."));
+    return process.exit(-1);
+  } else {
+    console.log(TimeTooLowMsg);
+  }
+};
