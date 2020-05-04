@@ -1,7 +1,7 @@
 @echo off
 Title RainbowRoleDiscordBot By Dany-LF
 cls
-color 5F
+color 0
 :question
 echo 1) Install modules
 echo 2) Launch bot(if he crash you have to relaunch it)
