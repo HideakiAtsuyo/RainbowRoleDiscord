@@ -8,7 +8,7 @@
 # Video
 <br>
 
-[Check the "tutorial"](https://www.youtube.com/watch?v=GJMjZCJ_VpI)
+[Check the "tutorial"](https://www.youtube.com/watch?v=GJMjZCJ_VpI) (Outdated because the code is a little bit changed.. but u can setup it without :))
 
 # Config
 <br>
