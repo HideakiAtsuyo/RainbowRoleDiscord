@@ -38,9 +38,20 @@ client.on('message', async (message) => {
   message.reply('Activated!').then((message) => {message.delete(3000);});
   if(message.deletable) message.delete();
   var thebigmix = message.guild.roles.find("name", n);
-  let interval = setInterval(function () {
-  thebigmix.setColor("RANDOM").catch(console.error);
-  }, conf.time*1000);//config.time in seconds
+  
+  //////////////////TRY & CATCH FOR 0 CRASH//////////////////
+
+  try{
+    let interval = setInterval(function () {
+      thebigmix.setColor("RANDOM").catch(console.error);
+    }, conf.time*1000);
+  } catch {
+    console.log(`${chalk.blue(`The bot can't play with colors of "${n}" i think he is ratelimited :'(`)}`);
+  }
+
+  //////////////////TRY & CATCH FOR 0 CRASH//////////////////
+
+  //config.time in seconds
 }});
 client.login(conf.token);
 
