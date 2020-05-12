@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dany-LF/RainbowRoleDiscord.git"
+    "url": "git+https://github.com/HideakiAtsuyo/RainbowRoleDiscord.git"
   },
   "keywords": [
     "rainbow",
@@ -18,12 +18,12 @@
     "rainbowbot",
     "DanyLFRainbow"
   ],
-  "author": "Dany-LF",
+  "author": "HideakiAtsuyo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Dany-LF/RainbowRoleDiscord/issues"
+    "url": "https://github.com/HideakiAtsuyo/RainbowRoleDiscord/issues"
   },
-  "homepage": "https://github.com/Dany-LF/RainbowRoleDiscord#readme",
+  "homepage": "https://github.com/HideakiAtsuyo/RainbowRoleDiscord#readme",
   "dependencies": {
     "chalk": "^4.0.0",
     "colors": "^1.1.2",
