@@ -1,7 +1,7 @@
 # RainbowRoleDiscord
 <br>
 
-[If you find any error or other | open an issue](https://github.com/Dany-LF/RainbowRoleDiscord/issues)
+[If you find any error or other | open an issue](https://github.com/HideakiAtsuyo/RainbowRoleDiscord/issues)
 
 <br>
 
