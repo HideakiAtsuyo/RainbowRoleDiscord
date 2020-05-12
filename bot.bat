@@ -1,5 +1,5 @@
 @echo off
-Title RainbowRoleDiscordBot By DHideakiAtsuyo
+Title RainbowRoleDiscordBot By HideakiAtsuyo
 cls
 color 0
 :question
